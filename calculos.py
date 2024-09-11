@@ -6,3 +6,5 @@ def promedio(nota1, nota2, nota3):
 
 
 
+#Gustavo Solar
+#Gutischi98
