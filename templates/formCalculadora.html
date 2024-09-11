@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/src/style.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+<nav class="navbar bg-black">
+  <div class="container">
+    <a class="navbar-brand text-light">Formulario Notas</a>
+  </div>
+    <div>
+        <a href="/">
+    <button type="button" class="btn btn-primary me-3">Volver</button>
+    </a>
+    </div>
+</nav>
+    <form method="post" class=" my-4 container">
+  <div class="mb-3">
+    <label for="nota1" class="form-label">Nota 1:</label>
+    <input type="number" name="nota1">
+  </div>
+    <div class="mb-3">
+    <label for="nota2" class="form-label">Nota 2:</label>
+    <input type="number" name="nota2">
+  </div>
+    <div class="mb-3">
+    <label for="nota3" class="form-label">Nota 3:</label>
+    <input type="number" name="nota3">
+  </div>
+    <div class="mb-3">
+    <label for="asist" class="form-label">Asistencia(%):</label>
+    <input type="number" name="asistencia">
+  </div>
+
+    {% if resultado %}
+    <div class="mb-3">
+        <p>{{ resultado }}</p>
+    </div>
+    {% endif %}
+
+  <button type="submit" class="btn btn-primary" value="enviar">Submit</button>
+</form>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
