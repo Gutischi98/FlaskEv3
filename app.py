@@ -64,3 +64,6 @@ def nombres():
 
 if __name__ == '__main__':
     app.run()
+
+#Gustavo Solar
+#Gutischi98
